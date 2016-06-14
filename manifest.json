@@ -1,0 +1,17 @@
+{
+  "name": "ASB No Look",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "",
+  "permissions": ["https://online.asb.co.nz/fnc*"],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [
+        "https://online.asb.co.nz/fnc*"
+      ],
+      "css": ["styles.css"],
+      "js": ["script.js"]
+    }
+  ]
+}
